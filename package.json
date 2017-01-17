@@ -1,0 +1,24 @@
+{
+  "name": "typescript-object-utils",
+  "version": "0.0.1",
+  "main": "index.js",
+  "keywords": [
+    "typescript",
+    "object"
+  ],
+  "scripts": {
+    "prepublish": "tsc -d"
+  },
+  "author": "Daniel Król",
+  "license": "MIT",
+  "dependencies": {
+    "es6-shim": "^0.35.2"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.32"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mleko/typescript-object-utils.git"
+  }
+}
