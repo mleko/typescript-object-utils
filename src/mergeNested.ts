@@ -21,6 +21,6 @@ function mergeNestedFactory<A,B>(mrg: Merge<A,B>): Merge<A,B> {
 	return mrgDeep;
 }
 
-interface Merge<A,B> {
+export interface Merge<A,B> {
 	<A, B>(a: A, b: B): (A & B)
 }
