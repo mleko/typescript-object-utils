@@ -1,3 +1,5 @@
+import "es6-shim";
+
 export function shallowEquals(a, b): boolean {
 	if (Object.is(a, b)) {
 		return true;

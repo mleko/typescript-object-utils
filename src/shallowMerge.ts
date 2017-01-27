@@ -1,3 +1,5 @@
+import "es6-shim";
+
 import {shallowEquals} from "./shallowEquals";
 export function shallowMerge<A, B>(a: A, b: B): (A & B) {
 	let result = Object.assign({}, a, b);
