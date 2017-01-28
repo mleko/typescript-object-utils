@@ -2,6 +2,7 @@
 > Immutable object manipulation methods
 
 [![NPM](https://nodei.co/npm/typescript-object-utils.png?compact=true)](https://nodei.co/npm/typescript-object-utils/)
+[![Build Status](https://travis-ci.org/mleko/typescript-object-utils.svg?branch=master)](https://travis-ci.org/mleko/typescript-object-utils)
 
 ### Installation
 
