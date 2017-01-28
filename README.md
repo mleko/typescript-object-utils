@@ -14,14 +14,14 @@ $ npm install typescript-object-utils
 ### Examples 
 
 #### shallowEquals
-```
+```typescript
 import {shallowEquals} from "typescript-object-utils";
-shallowEquals({a:1,b:2}, {a:1,b:2});
+shallowEquals({a: 1, b: 2}, {a: 1, b: 2});
  //=> true
 ```
 
 #### merge
-```
+```typescript
 import {merge} from "typescript-object-utils";
 const x = {a: 1, b: 2};
 const y = {b: 2, c: 3};
@@ -36,7 +36,7 @@ x === s;
 ```
 
 #### shallowMerge
-```
+```typescript
 import {shallowMerge} from "typescript-object-utils";
 const x = {a: 1, b: 2, c: 3};
 const y = {c: 5, d: 4};
@@ -57,7 +57,7 @@ x === t;
 ```
 
 #### mergeDeep
-```
+```typescript
 import {mergeDeep} from "typescript-object-utils";
 const x = {a: 1, b: {c: 3}};
 const y = {b: {c: 3, d: 4}};
@@ -73,7 +73,7 @@ x === s;
 ```
 
 #### shallowMergeDeep
-```
+```typescript
 import {shallowMergeDeep} from "typescript-object-utils";
 const x = {a: 1, b: {c: 3}};
 const y = {b: {c: 3, d: 4}};
