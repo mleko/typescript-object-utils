@@ -1,5 +1,3 @@
-import "es6-shim";
-
 import {merge} from "./merge";
 import {shallowMerge} from "./shallowMerge";
 
