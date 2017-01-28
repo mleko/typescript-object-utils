@@ -2,11 +2,19 @@
   "name": "typescript-object-utils",
   "version": "0.1.3",
   "main": "index.js",
+  "description": "Immutable object manipulation methods",
   "keywords": [
     "typescript",
     "object",
     "utility",
-    "immutable"
+    "immutable",
+    "merge",
+    "equals",
+    "merge-deep",
+    "deep-merge",
+    "shallow-equals",
+    "shallow-merge",
+    "update"
   ],
   "scripts": {
     "prepublish": "tsc -d",
