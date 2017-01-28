@@ -1,10 +1,10 @@
 import {merge} from "./merge";
 import {shallowMerge} from "./shallowMerge";
 
-export const mergeNested = mergeNestedFactory(merge);
-export const shallowMergeNested = mergeNestedFactory(shallowMerge);
+export const mergeDeep = mergeDeepFactory(merge);
+export const shallowMergeDeep = mergeDeepFactory(shallowMerge);
 
-function mergeNestedFactory<A,B>(mrg: Merge<A,B>): Merge<A,B> {
+function mergeDeepFactory<A,B>(mrg: Merge<A,B>): Merge<A,B> {
 	let mrgDeep;
 	mrgDeep = <A, B>(a: A, b: B): (A & B) => {
 		let r = a;
