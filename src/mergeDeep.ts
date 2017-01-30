@@ -10,7 +10,7 @@ function mergeDeepFactory<A,B>(mrg: Merge<A,B>): Merge<A,B> {
 		let r = a;
 		for (let p in b) {
 			if (b.hasOwnProperty(p)) {
-				let v = typeof b[p] === "object" ? mrgDeep(a.hasOwnProperty(p) ? a[p as any] : {}, b[p], mrg) : b[p];
+				let v = (typeof b[p] === "object" && !Array.isArray(b[p])) ? mrgDeep(a.hasOwnProperty(p) ? a[p as any] : {}, b[p], mrg) : b[p];
 				r = mrg(r, {[p]: v});
 			}
 		}

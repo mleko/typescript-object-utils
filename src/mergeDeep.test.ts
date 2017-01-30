@@ -41,3 +41,16 @@ test("Test shallowMergingDeep", (t) => {
 
 	t.end();
 });
+
+test("Test mergingDeep with array", (t) => {
+	const base = {a: 1, b: [2, 2]};
+
+	const result = mergeDeep(base, {b: [3]});
+
+	t.equals(result.b.length, 1);
+	t.equals(result.b[0], 3);
+	t.equals(result.a, 1);
+	t.notEquals(result, base);
+
+	t.end();
+});
