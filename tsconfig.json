@@ -12,7 +12,10 @@
     "experimentalDecorators": true
   },
   "files": [
-    "node_modules/@types/es6-shim/index.d.ts",
     "index.ts"
-  ]
+  ],
+	"lib": [
+		"es2015",
+		"dom"
+	]
 }
