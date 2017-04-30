@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
+		"outDir": "./dist/out-tsc",
+    "target": "es6",
     "module": "commonjs",
     "jsx": "react",
     "declaration": false,
@@ -13,9 +14,5 @@
   },
   "files": [
     "index.ts"
-  ],
-	"lib": [
-		"es2015",
-		"dom"
-	]
+  ]
 }
