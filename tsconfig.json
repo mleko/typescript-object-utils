@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
-		"outDir": "./dist/out-tsc",
     "target": "es6",
     "module": "commonjs",
-    "jsx": "react",
     "declaration": false,
     "noImplicitAny": false,
     "removeComments": true,
