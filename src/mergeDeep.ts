@@ -4,7 +4,7 @@ import {shallowMerge} from "./shallowMerge";
 export const mergeDeep = mergeDeepFactory(merge);
 export const shallowMergeDeep = mergeDeepFactory(shallowMerge);
 
-function mergeDeepFactory<A,B>(mrg: Merge<A,B>): Merge<A,B> {
+function mergeDeepFactory<A, B>(mrg: Merge<A, B>): Merge<A, B> {
 	let mrgDeep;
 	mrgDeep = <A, B>(a: A, b: B): (A & B) => {
 		let r = a;
@@ -19,6 +19,6 @@ function mergeDeepFactory<A,B>(mrg: Merge<A,B>): Merge<A,B> {
 	return mrgDeep;
 }
 
-export interface Merge<A,B> {
-	<A, B>(a: A, b: B): (A & B)
+export interface Merge<A, B> {
+	<A, B>(a: A, b: B): (A & B);
 }
