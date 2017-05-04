@@ -18,6 +18,7 @@
     "update"
   ],
   "scripts": {
+    "compile": "tsc -d",
     "prepublish": "tsc -d",
     "test": "ts-node node_modules/tape/bin/tape src/*.test.ts src/**/*.test.ts",
     "lint": "tslint src/* src/**/*"

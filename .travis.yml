@@ -7,3 +7,8 @@ node_js:
   - "5"
 git:
   depth: 7
+
+script:
+  - npm run -q compile
+  - npm run -q lint
+  - npm test
