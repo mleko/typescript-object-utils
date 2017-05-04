@@ -7,15 +7,15 @@ export function shallowEquals(a, b): boolean {
 		return false;
 	}
 
-	let keysA = Object.keys(a);
-	let keysB = Object.keys(b);
+	const keysA = Object.keys(a);
+	const keysB = Object.keys(b);
 
 	if (keysA.length !== keysB.length) {
 		return false;
 	}
 
 	// Test for A's keys different from B.
-	for (let key of keysA) {
+	for (const key of keysA) {
 		if (!b.hasOwnProperty(key) || !Object.is(a[key], b[key])) {
 			return false;
 		}

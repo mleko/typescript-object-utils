@@ -1,7 +1,7 @@
 export function discard<A>(a: A, keyToDiscard: string): A {
 	const result = {};
 	const keys = Object.keys(a);
-	for (let key of keys) {
+	for (const key of keys) {
 		if (key != keyToDiscard && a.hasOwnProperty(key)) {
 			result[key] = a[key];
 		}
