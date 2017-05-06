@@ -1,6 +1,6 @@
 {
   "name": "typescript-object-utils",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Immutable object manipulation methods",
@@ -25,8 +25,7 @@
   },
   "author": "Daniel Król",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/tape": "^4.2.28",
     "tape": "^4.6.3",
