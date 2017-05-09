@@ -89,18 +89,4 @@ x === s;
  //=> true
 ```
 
-### ES5 compatibility
-
-`typescript-object-utils` use ES6 features, for ES5 compatibility use `es6-shim`
- 
- ```
- npm install --save es6-shim @types/es6-shim
- ```
- and import in main file
- ```
- // index.ts
- require "es6-shim"
- ```
- 
-
 ### [License (MIT)](LICENSE.md)
