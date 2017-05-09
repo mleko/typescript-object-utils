@@ -1,0 +1,17 @@
+{
+  "name": "@mleko/typescript-object-utils-compat-test",
+  "scripts": {
+    "compile-es5": "tsc -p tsconfig-es5.json",
+    "compile-es6": "tsc -p tsconfig-es6.json"
+  },
+  "author": "Daniel Król",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "typescript-object-utils": "latest",
+    "es6-shim": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}
