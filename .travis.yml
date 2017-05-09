@@ -12,3 +12,9 @@ script:
   - npm run -q compile
   - npm run -q lint
   - npm test
+  - npm link
+  - rm -rf node_modules
+  - cd test/es-compat
+  - npm install
+  - tsc -p tsconfig-es5.json && node dist/index.js
+  - tsc -p tsconfig-es6.json && node dist/index.js
