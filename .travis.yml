@@ -16,5 +16,5 @@ script:
   - cd test/es-compat
   - npm install
   - npm install ../..
-  - tsc -p tsconfig-es5.json && node dist/index.js
-  - tsc -p tsconfig-es6.json && node dist/index.js
+  - npm run compile-es5 && node dist/index.js
+  - npm run compile-es6 && node dist/index.js
