@@ -54,3 +54,16 @@ test("Test mergingDeep with array", (t) => {
 
 	t.end();
 });
+
+test("Test null merge", (t) => {
+	const base = {a: null, b: {c: null}};
+	const result = mergeDeep(base, {b: {d: 3}});
+
+	t.equal(result.a, null);
+	t.equal(result.b.c, null);
+	t.equal(result.b.d, 3);
+
+	t.equal(mergeDeep({}, {a: null}).a, null);
+
+	t.end();
+});

@@ -10,13 +10,24 @@ function mergeDeepFactory<A, B>(mrg: Merge<A, B>): Merge<A, B> {
 		let r = a;
 		for (const p in b) {
 			if (b.hasOwnProperty(p)) {
-				const v = (typeof b[p] === "object" && !Array.isArray(b[p])) ? mrgDeep(a.hasOwnProperty(p) ? a[p as any] : {}, b[p], mrg) : b[p];
+				const v = isObject(b, p) ? mergeProperty<A, B>(a, b, p, mrg, mrgDeep) : b[p];
 				r = mrg(r, {[p]: v});
 			}
 		}
 		return r as (A & B);
 	};
 	return mrgDeep;
+}
+
+function mergeProperty<A, B>(a: A, b: B, p, mrg: Merge<A, B>, mrgDeep): (A & B) {
+	if (a.hasOwnProperty(p)) {
+		return mrgDeep(a[p as any], b[p], mrg);
+	}
+	return b[p];
+}
+
+function isObject(b, p) {
+	return (null !== b[p] && typeof b[p] === "object" && !Array.isArray(b[p]));
 }
 
 export type Merge<A, B> = <A, B>(a: A, b: B) => (A & B);
