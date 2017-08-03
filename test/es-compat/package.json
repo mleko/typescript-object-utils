@@ -8,10 +8,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "typescript-object-utils": "latest",
-    "es6-shim": "latest"
+    "typescript-object-utils": "latest"
   },
   "devDependencies": {
-    "typescript": "latest"
+    "typescript": "~2.3.0"
   }
 }
