@@ -1,5 +1,7 @@
 {
-  "extends": ["tslint:recommended"],
+  "extends": [
+    "tslint:recommended"
+  ],
   "rules": {
     "indent": [
       true,
@@ -14,7 +16,6 @@
       true,
       "check-decl",
       "check-operator",
-      "check-module",
       "check-separator",
       "check-type"
     ],
@@ -25,9 +26,12 @@
     "switch-default": false,
     "radix": false,
     "interface-name": false,
-    "semicolon": [true, "always", "ignore-bound-class-methods"]
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ]
   },
   "rulesDirectory": [
-
   ]
 }
