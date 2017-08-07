@@ -4,4 +4,4 @@ export function objectMap<A, B>(obj: { [id: string]: A }, cb: Processor<A, B>): 
 	}, {})
 }
 
-type Processor<A, B> = (v: A, key: string, obj: { [id: string]: A }) => B;
+export type Processor<A, B> = (v: A, key: string, obj: { [id: string]: A }) => B;
