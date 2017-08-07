@@ -4,3 +4,4 @@ export {shallowMerge} from "./src/shallowMerge";
 export {mergeDeep, shallowMergeDeep} from "./src/mergeDeep";
 export {discard} from "./src/discard";
 export {pick} from "./src/pick";
+export {objectMap} from "./src/objectMap";
