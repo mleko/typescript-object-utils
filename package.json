@@ -1,6 +1,6 @@
 {
   "name": "typescript-object-utils",
-  "version": "0.2.11",
+  "version": "0.3.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Immutable object manipulation methods",
