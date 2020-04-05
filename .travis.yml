@@ -12,9 +12,3 @@ script:
   - npm run -q compile
   - npm run -q lint
   - npm test
-  - rm -rf node_modules
-  - cd test/es-compat
-  - npm install
-  - npm install ../..
-  - npm run compile-es5 && node dist/index.js
-  - npm run compile-es6 && node dist/index.js
