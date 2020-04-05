@@ -98,4 +98,13 @@ objectMap(a, v => String(v*2))
  //=> { a: '2', b: '4' }
 ```
 
+#### objectMap
+```typescript
+import {objectReduce} from "typescript-object-utils";
+const obj = {a: 1, b: 2};
+
+objectReduce(obj, (acc, v) => acc + v, 0)
+ //=> 3
+```
+
 ### [License (MIT)](LICENSE.md)
