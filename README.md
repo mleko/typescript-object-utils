@@ -94,7 +94,7 @@ x === s;
 import {objectMap} from "typescript-object-utils";
 const obj = {a: 1, b: 2};
 
-objectMap(a, v => String(v*2))
+objectMap(obj, v => String(v*2))
  //=> { a: '2', b: '4' }
 ```
 
